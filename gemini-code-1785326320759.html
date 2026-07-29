@@ -3,10 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Basic SEO -->
 <title>The Civic Letters — essays on life, culture, social issues, and politics</title>
+<meta name="description" content="Writing to make sense of life, culture, social issues, and politics. Essays exploring the ideas that shape our lives.">
+
+<!-- Open Graph / Social Media SEO -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Civic Letters — Essays on life, culture, social issues, and politics">
+<meta property="og:description" content="Making sense of the world, one question at a time.">
+<meta property="og:url" content="https://yourdomain.com/">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+
 <!-- Decap CMS Auth Widget -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -301,19 +312,9 @@
         <h2 class="serif">Essays</h2>
       </div>
       
-      <div class="placeholders-wrapper">
-        <a href="essay-1.html" target="_blank" rel="noopener noreferrer" class="article-placeholder-row">
-          <span class="label mono">[ 01 ]</span>
-          <span class="text">Essay placeholders reserved for upcoming publications.</span>
-        </a>
-        <a href="essay-2.html" target="_blank" rel="noopener noreferrer" class="article-placeholder-row">
-          <span class="label mono">[ 02 ]</span>
-          <span class="text">Essay placeholders reserved for upcoming publications.</span>
-        </a>
-        <a href="essay-3.html" target="_blank" rel="noopener noreferrer" class="article-placeholder-row">
-          <span class="label mono">[ 03 ]</span>
-          <span class="text">Essay placeholders reserved for upcoming publications.</span>
-        </a>
+      <!-- Dynamic container where published essays render -->
+      <div class="placeholders-wrapper" id="essays-container">
+        <!-- Essays will load dynamically via JavaScript -->
       </div>
     </div>
   </section>
@@ -379,6 +380,7 @@
   </div>
 </footer>
 
+<!-- Decap CMS Authentication Redirect Script -->
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -389,6 +391,33 @@
       }
     });
   }
+</script>
+
+<!-- Essay Loader Script -->
+<script>
+  async function loadEssays() {
+    const container = document.getElementById('essays-container');
+    
+    // Replace/expand this array or connect it to your CMS build step/index.json
+    const posts = [
+      { id: '01', title: 'Example Essay Title — On Culture & Life', url: '/essays/example-essay-1.html' },
+      { id: '02', title: 'Second Essay Title — Questions for the Future', url: '/essays/example-essay-2.html' }
+    ];
+
+    if (posts.length === 0) {
+      container.innerHTML = `<p style="color: var(--rose-dusty); font-style: italic;">No essays published yet.</p>`;
+      return;
+    }
+
+    container.innerHTML = posts.map(post => `
+      <a href="${post.url}" target="_blank" rel="noopener noreferrer" class="article-placeholder-row">
+        <span class="label mono">[ ${post.id} ]</span>
+        <span class="text">${post.title}</span>
+      </a>
+    `).join('');
+  }
+
+  loadEssays();
 </script>
 
 </body>
