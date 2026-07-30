@@ -295,9 +295,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <p class="hero-eyebrow mono animate-fade-in">i want to discuss, life culture, politics and social issues</p>
+      <p class="hero-eyebrow mono animate-fade-in">Life, Culture, Politics &amp; Social Issues</p>
       <h1 class="serif animate-fade-in delay-1">Making Sense of the World,<br>One Question at a Time.</h1>
-      <p class="lede animate-fade-in delay-2">Writing to make sense of I want to discuss, life culture, politics and social issues, and the ideas that shape our lives. Not to provide rapid answers, but to ask better questions.</p>
+      <p class="lede animate-fade-in delay-2">Writing to explore life, culture, politics and society through thoughtful essays, questions and discussion.</p>
       <div class="hero-actions animate-fade-in delay-3">
         <a href="#essays" class="btn-text">Read Essays</a>
         <a href="#about" class="btn-text">About the Author</a>
@@ -371,7 +371,6 @@
       <div class="footer-links">
         <a href="#essays">Essays</a>
         <a href="#about">About</a>
-        <a href="#subscribe">Subscribe</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -396,29 +395,32 @@
 
 <!-- Essay Loader Script -->
 <script>
-  async function loadEssays() {
-    const container = document.getElementById('essays-container');
-    
-    // Replace/expand this array or connect it to your CMS build step/index.json
-    const posts = [
-      { id: '01', title: 'Example Essay Title — On Culture & Life', url: '/essays/example-essay-1.html' },
-      { id: '02', title: 'Second Essay Title — Questions for the Future', url: '/essays/example-essay-2.html' }
-    ];
+function loadEssays() {
+  const container = document.getElementById('essays-container');
 
-    if (posts.length === 0) {
-      container.innerHTML = `<p style="color: var(--rose-dusty); font-style: italic;">No essays published yet.</p>`;
-      return;
+  const posts = [
+    {
+      id: '01',
+      title: 'Religious Politics',
+      url: 'Religious Politics.html'
     }
+  ];
 
-    container.innerHTML = posts.map(post => `
-      <a href="${post.url}" target="_blank" rel="noopener noreferrer" class="article-placeholder-row">
-        <span class="label mono">[ ${post.id} ]</span>
-        <span class="text">${post.title}</span>
-      </a>
-    `).join('');
+  if (posts.length === 0) {
+    container.innerHTML =
+      '<p style="color:#C6A5B3;font-style:italic;">No essays published yet.</p>';
+    return;
   }
 
-  loadEssays();
+  container.innerHTML = posts.map(post => `
+    <a href=rl}
+      <span class="label mono">[ ${post.id} ]</span>
+      <span class="text">${post.title}</span>
+    </a>
+  `).join('');
+}
+
+loadEssays();
 </script>
 
 </body>
