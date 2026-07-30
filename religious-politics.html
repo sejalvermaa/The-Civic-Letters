@@ -1,110 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Religious Politics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Religious Politics — The Civic Letters</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Inter:wght@300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
 
-<link href="https://fonts.;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Inter',sans-serif;
-    background:linear-gradient(135deg,#2b0a12,#44101d,#5f1729);
-    color:#f5f1ea;
-    line-height:1.9;
-}
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:70px 35px;
-}
-
-header{
-    text-align:center;
-    margin-bottom:60px;
-}
-
-h1{
-    font-family:'Playfair Display',serif;
-    font-size:4rem;
-    color:#d8b26e;
-    font-weight:700;
-    letter-spacing:1px;
-}
-
-.content{
-    background:rgba(255,255,255,0.03);
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:18px;
-    padding:50px;
-}
-
-p{
-    font-size:1.08rem;
-    margin-bottom:24px;
-    text-align:justify;
-}
-
-.highlight,
-.emphasis{
-    color:#d8b26e;
-    font-weight:600;
-}
-
-.section-divider{
-    width:80px;
-    height:2px;
-    background:#d8b26e;
-    margin:40px auto;
-}
-
-footer{
-    margin-top:50px;
-    text-align:center;
-    color:#c9b59e;
-    font-size:0.9rem;
-}
-
-@media(max-width:768px){
-
-    .container{
-        padding:40px 20px;
+  <style>
+    :root {
+      --bg-main: #2B0F19;
+      --rose-dusty: #C6A5B3;
+      --text-warm-white: #F5F0ED;
+      --text-grey-light: #D7D0CC;
+      --gold-accent: #B08D57;
+      --line: rgba(198, 165, 179, 0.15);
     }
 
-    .content{
-        padding:30px;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-warm-white);
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
     }
 
-    h1{
-        font-size:2.7rem;
-    }
-
-    p{
-        font-size:1rem;
-    }
-}
-</style>
+    .wrap { max-width: 680px; margin: 0 auto; padding: 80px 20px; }
+    a.back-link { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--gold-accent); text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; }
+    a.back-link:hover { text-decoration: underline; }
+    
+    header { margin-top: 40px; margin-bottom: 40px; border-bottom: 1px solid var(--line); padding-bottom: 30px; }
+    h1 { font-family: 'Newsreader', serif; font-size: 40px; font-weight: 400; line-height: 1.2; margin-bottom: 12px; }
+    .meta { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--rose-dusty); }
+    
+    .content p { font-family: 'Newsreader', serif; font-size: 20px; font-weight: 300; color: var(--text-warm-white); margin-bottom: 24px; line-height: 1.7; }
+  </style>
 </head>
-
 <body>
 
-<div class="container">
+  <main class="wrap">
+    <a href="index.html" class="back-link">&larr; Back to Essays</a>
 
-<header>
-    <h1>Religious Politics</h1>
-</header>
+    <header>
+      <h1>Religious Politics</h1>
+      <p class="meta">Essay 01</p>
+    </header>
 
-<div class="content">
-
-<p>
+    <article class="content">
+      <p><p>
 The many religions present in India not only reflect the country's remarkable diversity but also highlight the rich and unique history that has shaped and sustained its civilization over thousands of years.
 </p>
 
@@ -188,14 +135,11 @@ It is the nature of power-seeking political parties to navigate every situation 
 <p>
 A nation's strength is measured not merely by the size of any one community, but by its ability to protect the dignity, freedom, and coexistence of all who call it home.
 </p>
-
-</div>
-
-<footer>
-Religious Politics • Faith, Democracy & Pluralism
-</footer>
-
-</div>
+</p>
+    </article>
+  </main>
 
 </body>
 </html>
+
+
