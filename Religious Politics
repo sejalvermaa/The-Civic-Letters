@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Religious Politics</title>
+
+<link href="https://fonts.;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:linear-gradient(135deg,#2b0a12,#44101d,#5f1729);
+    color:#f5f1ea;
+    line-height:1.9;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:70px 35px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+h1{
+    font-family:'Playfair Display',serif;
+    font-size:4rem;
+    color:#d8b26e;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.content{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px;
+    padding:50px;
+}
+
+p{
+    font-size:1.08rem;
+    margin-bottom:24px;
+    text-align:justify;
+}
+
+.highlight,
+.emphasis{
+    color:#d8b26e;
+    font-weight:600;
+}
+
+.section-divider{
+    width:80px;
+    height:2px;
+    background:#d8b26e;
+    margin:40px auto;
+}
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    color:#c9b59e;
+    font-size:0.9rem;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:40px 20px;
+    }
+
+    .content{
+        padding:30px;
+    }
+
+    h1{
+        font-size:2.7rem;
+    }
+
+    p{
+        font-size:1rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>Religious Politics</h1>
+</header>
+
+<div class="content">
+
+<p>
+The many religions present in India not only reflect the country's remarkable diversity but also highlight the rich and unique history that has shaped and sustained its civilization over thousands of years.
+</p>
+
+<p>
+India's religious landscape has been shaped by both indigenous traditions and faiths that arrived from abroad over the course of its long history. Jainism and Buddhism emerged in the 6th-5th century BCE as reform movements that challenged aspects of Vedic ritualism and emphasized ethical living, non-violence, compassion, and spiritual liberation. Zoroastrianism later arrived with Persian migrants seeking refuge from persecution, while Christianity is believed to have been introduced in the 1st century CE through Apostle Thomas and expanded further with the arrival of European missionaries.
+</p>
+
+<p>
+Islam spread through trade networks, cultural exchanges, and the expansion of ruling dynasties such as the Delhi Sultanate and the Mughals. In the 15th century, Sikhism emerged in Punjab under Guru Nanak, advocating belief in one God, equality among all people, service to humanity, and moral living.
+</p>
+
+<div class="section-divider"></div>
+
+<p>
+Every faith that reached the Indian subcontinent occupied its own place in history. Together, these traditions shaped the region's social, cultural, and intellectual tapestry.
+</p>
+
+<p class="highlight">
+To single out Hinduism as the sole basis for describing India as a "Hindu nation" raises a fundamental question:
+</p>
+
+<p class="emphasis">
+By what criterion do we choose one tradition above others that have coexisted on this land for centuries?
+</p>
+
+<p>
+If the criterion is antiquity, then the Indus Valley Civilization, with its indigenous traditions of nature and element worship, would have an equally valid claim. Indeed, by that measure alone, it would be the oldest claimant.
+</p>
+
+<p>
+These religious systems were introduced over the centuries as mechanisms to maintain social order and shared ethical frameworks. Formed in response to migrations, foreign invasions, and internal shifts, these diverse traditions shared a common pragmatic purpose: maintaining peace and social cohesion.
+</p>
+
+<p>
+Today, we often overlook the long history of coexistence and cultural exchange among these religions, setting aside centuries of shared heritage in favor of narratives that emphasize division rather than understanding. In doing so, we risk losing sight of the values of pluralism, tolerance, and mutual respect that have helped shape the Indian subcontinent for centuries.
+</p>
+
+<div class="section-divider"></div>
+
+<p>
+Contrary to narratives that portray demographic change as an existential threat, projections from the Pew Research Center indicate that Hindus will continue to constitute the overwhelming majority of India's population. Although the Muslim share of the population is projected to rise from 14.4% in 2010 to 18.4% in 2050, Hindus are still projected to comprise 76.7% of the population because they begin from a much larger demographic base.
+</p>
+
+<p>
+Muslims are projected to grow at a faster rate primarily because of their younger age profile and historically higher fertility rates, not because of any dramatic demographic replacement.
+</p>
+
+<p class="emphasis">
+Demographic change becomes a source of anxiety only when people are persuaded to view it as an existential threat.
+</p>
+
+<p>
+It requires only an open mind to recognize that such changes are demographic in nature rather than civilizational in consequence.
+</p>
+
+<p>
+For those seeking a spiritual perspective, it may be worth reflecting:
+<span class="highlight">
+Who do you believe ultimately governs the fate of your religion and your community?
+</span>
+</p>
+
+<p>
+If the answer is political leaders, then demographic numbers may seem like the most important measure of security. But if the answer is God, then fear of demographic projections begins to lose its force. An all-powerful God does not depend on human beings for protection, nor can His existence be threatened by population statistics.
+</p>
+
+<p>
+If we truly believe that the divine is supreme, then our responsibility is not to panic about the growth of another community, but to live according to the values, teachings, and principles of our own faith. Religions endure not because of numbers alone, but because their followers continue to practice, preserve, and pass on their beliefs with conviction.
+</p>
+
+<p class="emphasis">
+Faith rooted in confidence is far stronger than faith rooted in fear.
+</p>
+
+<div class="section-divider"></div>
+
+<p>
+It is the nature of power-seeking political parties to navigate every situation in a manner that best serves their interests and objectives. However, it is equally the responsibility of us, the citizens of the Republic of India, a democratic nation, to decide the principles and priorities on which we elect our leaders and to hold them accountable for their actions thereafter.
+</p>
+
+<p>
+A nation's strength is measured not merely by the size of any one community, but by its ability to protect the dignity, freedom, and coexistence of all who call it home.
+</p>
+
+</div>
+
+<footer>
+Religious Politics • Faith, Democracy & Pluralism
+</footer>
+
+</div>
+
+</body>
+</html>
