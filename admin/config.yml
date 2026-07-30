@@ -5,14 +5,5 @@ backend:
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
-collections:
-  - name: "essays"
-    label: "Essays"
-    folder: "content/essays"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "SEO Meta Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
+# Left empty or removed since you manage HTML files directly in your repository
+collections: []
