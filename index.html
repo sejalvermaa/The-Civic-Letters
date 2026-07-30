@@ -329,20 +329,23 @@
 <script>
   async function loadEssays() {
     const container = document.getElementById('essays-container');
-    
-    // Replace/expand this array or connect it to your CMS build step/index.json
+
     const posts = [
-      { id: '01', title: 'Religious Politics', url: 'Religious Politics.html' },
-     
+      {
+        id: '01',
+        title: 'Religious Politics',
+        url: './Religious%20Politics.html'
+      }
     ];
 
     if (posts.length === 0) {
-      container.innerHTML = `<p style="color: var(--rose-dusty); font-style: italic;">No essays published yet.</p>`;
+      container.innerHTML =
+        '<p style="color: var(--rose-dusty); font-style: italic;">No essays published yet.</p>';
       return;
     }
 
     container.innerHTML = posts.map(post => `
-      <a href="${post.url}" target="_blank" rel="noopener noreferrer" class="article-placeholder-row">
+      ${post.url}
         <span class="label mono" aria-hidden="true">[ ${post.id} ]</span>
         <span class="text">${post.title}</span>
       </a>
