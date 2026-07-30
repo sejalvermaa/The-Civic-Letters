@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Basic SEO -->
-<title>The Civic Letters — essays on i want to discuss, life culture, politics and social issues</title>
-<meta name="description" content="Writing to make sense of i want to discuss, life culture, politics and social issues. Essays exploring the ideas that shape our lives.">
+<title>The Civic Letters — Essays on Life, Culture, Politics & Social Issues</title>
+<meta name="description" content="Essays exploring life, culture, politics, and social issues. Writing to ask better questions about the ideas that shape our world.">
 
 <!-- Open Graph / Social Media SEO -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="The Civic Letters — Essays on i want to discuss, life culture, politics and social issues">
+<meta property="og:title" content="The Civic Letters — Essays on Life, Culture, Politics & Social Issues">
 <meta property="og:description" content="Making sense of the world, one question at a time.">
 <meta property="og:url" content="https://yourdomain.com/">
 
@@ -208,54 +208,6 @@
   .about-text p:last-child { margin-bottom: 0; }
   .about-author { margin-top: 36px; font-size: 13px; color: var(--rose-dusty); text-transform: uppercase; letter-spacing: 0.08em; }
 
-  /* ---------- SUBSCRIBE / NOTIFICATIONS ---------- */
-  .newsletter-block {
-    background: var(--burgundy-deep);
-    border: 1px solid var(--line);
-    padding: 50px 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-    transition: all 0.4s ease;
-  }
-  .newsletter-block:hover { 
-    border-color: var(--gold-accent); 
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
-  }
-  .newsletter-block h2 { font-size: 28px; font-weight: 400; margin-bottom: 12px; color: var(--text-warm-white); }
-  .newsletter-block p { color: var(--rose-dusty); font-size: 14px; line-height: 1.6; }
-  .sub-form { display: flex; gap: 12px; margin-top: 8px; }
-  .sub-form input {
-    flex: 1; padding: 12px 16px; 
-    border: 1px solid var(--line); 
-    background: var(--bg-main); 
-    color: var(--text-warm-white); 
-    font-size: 14px; 
-    font-family: 'Inter', sans-serif;
-    outline: none;
-    transition: all 0.3s ease;
-  }
-  .sub-form input:focus { border-color: var(--gold-accent); box-shadow: 0 0 8px rgba(176, 141, 87, 0.3); }
-  .sub-form input::placeholder { color: var(--rose-dusty); opacity: 0.6; }
-  .sub-form button {
-    padding: 12px 20px; 
-    background: var(--wine-rich); 
-    color: var(--text-warm-white); 
-    border: 1px solid var(--line); 
-    font-size: 13px; 
-    cursor: pointer; 
-    transition: all 0.3s ease; 
-    font-family: 'Inter', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  .sub-form button:hover { 
-    background: var(--burgundy-deep); 
-    border-color: var(--gold-accent); 
-    transform: translateY(-2px);
-  }
-
   /* ---------- FOOTER ---------- */
   footer { background: var(--bg-main); padding: 60px 0 40px; }
   .footer-inner { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 24px; }
@@ -271,7 +223,6 @@
     section { padding: 60px 0; }
     .about-grid { grid-template-columns: 1fr; gap: 32px; }
     .about-image-wrapper { max-width: 280px; }
-    .newsletter-block { grid-template-columns: 1fr; padding: 30px 20px; }
     .footer-inner { flex-direction: column; align-items: flex-start; }
     .article-placeholder-row { grid-template-columns: 1fr; gap: 8px; }
   }
@@ -285,7 +236,6 @@
     <nav class="links">
       <a href="#essays">Essays</a>
       <a href="#about">About</a>
-      <a href="#subscribe">Subscribe</a>
     </nav>
   </div>
 </header>
@@ -297,7 +247,7 @@
     <div class="wrap">
       <p class="hero-eyebrow mono animate-fade-in">Life, Culture, Politics &amp; Social Issues</p>
       <h1 class="serif animate-fade-in delay-1">Making Sense of the World,<br>One Question at a Time.</h1>
-      <p class="lede animate-fade-in delay-2">Writing to explore life, culture, politics and society through thoughtful essays, questions and discussion.</p>
+      <p class="lede animate-fade-in delay-2">Writing to examine life, culture, politics, and the ideas that shape our lives. Not to provide rapid answers, but to ask better questions.</p>
       <div class="hero-actions animate-fade-in delay-3">
         <a href="#essays" class="btn-text">Read Essays</a>
         <a href="#about" class="btn-text">About the Author</a>
@@ -325,35 +275,17 @@
     <div class="wrap">
       <div class="about-grid">
         <div class="about-image-wrapper">
-          <img src="image_0.png" alt="Author photo">
+          <img src="input_file_0.png" alt="Author photo">
         </div>
         <div class="about-content">
           <div class="section-head" style="margin-bottom: 24px;">
             <p class="eyebrow mono">About</p>
           </div>
           <div class="about-text">
-            <p>Engineer by profession. Writer by choice</p>
+            <p>Engineer by profession. Writer by choice.</p>
             <p>This is a space where I explore life, culture, politics, and society through writing. I don't have all the answers, but I'm interested in asking better questions and understanding the world a little more deeply.</p>
           </div>
           <div class="about-author mono">Engineer &amp; Writer</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SUBSCRIBE / NEW PUBLICATION NOTIFICATIONS SECTION -->
-  <section id="subscribe">
-    <div class="wrap">
-      <div class="newsletter-block">
-        <div>
-          <h2 class="serif">Get Email Alerts</h2>
-          <p>Never miss a new piece. Enter your email to get an automatic notification directly in your inbox whenever a new essay is published.</p>
-        </div>
-        <div>
-          <form class="sub-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed';">
-            <input type="email" placeholder="Email address" required>
-            <button type="submit">Subscribe</button>
-          </form>
         </div>
       </div>
     </div>
@@ -366,7 +298,7 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <span class="brand-name serif">The Civic Letters</span>
-        <p>Essays on i want to discuss, life culture, politics and social issues.</p>
+        <p>Essays on life, culture, politics, and social issues.</p>
       </div>
       <div class="footer-links">
         <a href="#essays">Essays</a>
@@ -395,32 +327,29 @@
 
 <!-- Essay Loader Script -->
 <script>
-function loadEssays() {
-  const container = document.getElementById('essays-container');
+  async function loadEssays() {
+    const container = document.getElementById('essays-container');
+    
+    // Replace/expand this array or connect it to your CMS build step/index.json
+    const posts = [
+      { id: '01', title: 'Example Essay Title — On Culture & Life', url: '/essays/example-essay-1.html' },
+      { id: '02', title: 'Second Essay Title — Questions for the Future', url: '/essays/example-essay-2.html' }
+    ];
 
-  const posts = [
-    {
-      id: '01',
-      title: 'Religious Politics',
-      url: 'Religious Politics.html'
+    if (posts.length === 0) {
+      container.innerHTML = `<p style="color: var(--rose-dusty); font-style: italic;">No essays published yet.</p>`;
+      return;
     }
-  ];
 
-  if (posts.length === 0) {
-    container.innerHTML =
-      '<p style="color:#C6A5B3;font-style:italic;">No essays published yet.</p>';
-    return;
+    container.innerHTML = posts.map(post => `
+      <a href="${post.url}" target="_blank" rel="noopener noreferrer" class="article-placeholder-row">
+        <span class="label mono" aria-hidden="true">[ ${post.id} ]</span>
+        <span class="text">${post.title}</span>
+      </a>
+    `).join('');
   }
 
-  container.innerHTML = posts.map(post => `
-    <a href=rl}
-      <span class="label mono">[ ${post.id} ]</span>
-      <span class="text">${post.title}</span>
-    </a>
-  `).join('');
-}
-
-loadEssays();
+  loadEssays();
 </script>
 
 </body>
